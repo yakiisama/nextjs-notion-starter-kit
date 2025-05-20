@@ -37,6 +37,7 @@ export default siteConfig({
   // NOTE: if you enable redis, you need to set the `REDIS_HOST` and `REDIS_PASSWORD`
   // environment variables. see the readme for more info
   isRedisEnabled: false,
+  isSearchEnabled: true,
 
   // map of notion page IDs to URL paths (optional)
   // any pages defined here will override their default URL paths
@@ -50,16 +51,12 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages. To use `navigationLinks`, set `navigationStyle` to `custom`.
-  navigationStyle: 'default'
-  // navigationStyle: 'custom',
-  // navigationLinks: [
-  //   {
-  //     title: 'About',
-  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
-  //   },
-  //   {
-  //     title: 'Contact',
-  //     pageId: '6a29ebcb935a4f0689fe661ab5f3b8d1'
-  //   }
-  // ]
+  // navigationStyle: 'default'
+  navigationStyle: 'custom',
+  navigationLinks: [
+    {
+      title: 'About',
+      pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+    }
+  ]
 })

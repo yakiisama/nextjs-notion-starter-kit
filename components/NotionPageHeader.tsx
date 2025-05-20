@@ -21,7 +21,6 @@ function ToggleThemeButton() {
   const onToggleTheme = React.useCallback(() => {
     toggleDarkMode()
   }, [toggleDarkMode])
-
   return (
     <div
       className={cs('breadcrumb', 'button', !hasMounted && styles.hidden)}
@@ -47,7 +46,6 @@ export function NotionPageHeader({
     <header className='notion-header'>
       <div className='notion-nav-header'>
         <Breadcrumbs block={block} rootOnly={true} />
-
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks
             ?.map((link, index) => {
